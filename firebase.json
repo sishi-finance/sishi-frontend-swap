@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "tokenz-swap",
+    "site": "sishi-swap",
     "public": "build",
     "ignore": [
       "firebase.json",

@@ -89,7 +89,7 @@
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
     "integration-test": "start-server-and-test 'serve build -l 3000' http://localhost:3000 'cypress run'",
-    "deploy": "firebase deploy --only hosting:tokenz-swap"
+    "deploy": "firebase deploy --only hosting:sishi-swap"
   },
   "husky": {
     "hooks": {
