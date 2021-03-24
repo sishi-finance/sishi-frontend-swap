@@ -19,6 +19,14 @@
       "logoURI": "/images/coins/BUSD.png"
     },
     {
+      "name": "SISHI Token",
+      "symbol": "SISHI",
+      "address": "0x8e8538c75f273ab2df6adeecd3622a9c314fccf3",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/coins/SISHI.png"
+    },
+    {
       "name": "WBNB Token",
       "symbol": "WBNB",
       "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
