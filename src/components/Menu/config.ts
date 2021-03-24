@@ -1,7 +1,7 @@
 import { MenuEntry } from '@pancakeswap-libs/uikit'
 
 
-const homepage = "https://tokenz-farming.web.app/"
+const homepage = "https://sishi.finance/"
 
 const config: MenuEntry[] = [
   {
