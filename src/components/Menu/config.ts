@@ -30,9 +30,9 @@ const config: MenuEntry[] = [
     href: `${homepage}farms`,
   },
   {
-    label: 'Nest',
+    label: 'Staking',
     icon: 'PoolIcon',
-    href: `${homepage}nest`,
+    href: `${homepage}nests`,
   },
   // {
   //   label: 'Lottery',
@@ -63,28 +63,28 @@ const config: MenuEntry[] = [
   //     },
   //   ],
   // },
-  {
-    label: 'Info',
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: 'Overview',
-        href: 'https://pancakeswap.info',
-      },
-      {
-        label: 'Tokens',
-        href: 'https://pancakeswap.info/tokens',
-      },
-      {
-        label: 'Pairs',
-        href: 'https://pancakeswap.info/pairs',
-      },
-      {
-        label: 'Accounts',
-        href: 'https://pancakeswap.info/accounts',
-      },
-    ],
-  },
+  // {
+  //   label: 'Info',
+  //   icon: 'InfoIcon',
+  //   items: [
+  //     {
+  //       label: 'Overview',
+  //       href: 'https://pancakeswap.info',
+  //     },
+  //     {
+  //       label: 'Tokens',
+  //       href: 'https://pancakeswap.info/tokens',
+  //     },
+  //     {
+  //       label: 'Pairs',
+  //       href: 'https://pancakeswap.info/pairs',
+  //     },
+  //     {
+  //       label: 'Accounts',
+  //       href: 'https://pancakeswap.info/accounts',
+  //     },
+  //   ],
+  // },
   // {
   //   label: 'IFO',
   //   icon: 'IfoIcon',
@@ -95,20 +95,16 @@ const config: MenuEntry[] = [
     icon: 'MoreIcon',
     items: [
       {
-        label: 'Voting',
-        href: 'https://voting.pancakeswap.finance',
-      },
-      {
         label: 'Github',
-        href: 'https://github.com/pancakeswap',
+        href: 'https://github.com/sishi-finance/',
       },
       {
         label: 'Docs',
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://docs.sishi.finance',
       },
       {
         label: 'Blog',
-        href: 'https://pancakeswap.medium.com',
+        href: 'https://0xsishi.medium.com/',
       },
     ],
   },
