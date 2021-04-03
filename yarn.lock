@@ -2122,9 +2122,9 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@pancakeswap-libs/uikit@sishifinance/sishifinance-uikit#26566d539":
+"@pancakeswap-libs/uikit@sishifinance/sishifinance-uikit#08804df0d5e97":
   version "0.15.0"
-  resolved "https://codeload.github.com/sishifinance/sishifinance-uikit/tar.gz/26566d539ea37aac24ba719a64fde9d328fd7fd1"
+  resolved "https://codeload.github.com/sishifinance/sishifinance-uikit/tar.gz/08804df0d5e97c7680a19e664ca3ad01d2cc71f4"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
