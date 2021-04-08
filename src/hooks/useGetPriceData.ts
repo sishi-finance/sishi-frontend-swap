@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { usePairContract } from './useContract'
 
 type ApiResponse = {
   prices: {
@@ -14,24 +15,33 @@ type ApiResponse = {
 const api = 'https://api.pancakeswap.com/api/v1/price'
 
 const useGetPriceData = () => {
-  const [data, setData] = useState<ApiResponse | null>(null)
+
+  const pairContract = usePairContract("0x672e7976558eD2E6C3f99c0CD7C92a9eec01e9FB")
+
+  const [[sishiAmount, busdAmount], setReverses] = useState([0,1])
+
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(api)
-        const res: ApiResponse = await response.json()
+        const [_sishi, _busd] = await pairContract?.getReserves()
+        
+        setReverses([Number(_sishi),Number( _busd)]);
 
-        setData(res)
       } catch (error) {
-        console.error('Unable to fetch price data:', error)
+        setReverses([0, 1]);
       }
     }
 
     fetchData()
-  }, [setData])
+  },[setReverses, pairContract])
 
-  return data
+  return {
+    prices: {
+      SISHI: busdAmount / sishiAmount
+    }
+  }
+
 }
 
 export default useGetPriceData
