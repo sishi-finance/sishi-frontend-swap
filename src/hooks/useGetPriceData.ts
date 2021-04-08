@@ -18,7 +18,7 @@ const useGetPriceData = () => {
 
   const pairContract = usePairContract("0x672e7976558eD2E6C3f99c0CD7C92a9eec01e9FB")
 
-  const [[sishiAmount, busdAmount], setReverses] = useState([0,1])
+  const [[sishiAmount, busdAmount, loaded], setReverses] = useState([0,1, false])
 
 
   useEffect(() => {
@@ -26,10 +26,10 @@ const useGetPriceData = () => {
       try {
         const [_sishi, _busd] = await pairContract?.getReserves()
         
-        setReverses([Number(_sishi),Number( _busd)]);
+        setReverses([Number(_sishi),Number( _busd), true]);
 
       } catch (error) {
-        setReverses([0, 1]);
+        setReverses([0, 1, false]);
       }
     }
 
@@ -37,9 +37,9 @@ const useGetPriceData = () => {
   },[setReverses, pairContract])
 
   return {
-    prices: {
+    prices: loaded ? {
       SISHI: busdAmount / sishiAmount
-    }
+    } : {}
   }
 
 }
