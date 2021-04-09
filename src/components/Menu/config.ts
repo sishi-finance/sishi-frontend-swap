@@ -34,6 +34,11 @@ const config: MenuEntry[] = [
     icon: 'PoolIcon',
     href: `${homepage}nests`,
   },
+  {
+    label: 'Vault',
+    icon: 'VaultIcon',
+    href: `${homepage}vaults`,
+  },
   // {
   //   label: 'Lottery',
   //   icon: 'TicketIcon',
