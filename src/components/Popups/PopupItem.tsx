@@ -23,7 +23,7 @@ export const Popup = styled.div`
   padding: 1em;
   background-color: ${({ theme }) => theme.colors.invertedContrast};
   position: relative;
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 20px;
   padding-right: 35px;
   overflow: hidden;

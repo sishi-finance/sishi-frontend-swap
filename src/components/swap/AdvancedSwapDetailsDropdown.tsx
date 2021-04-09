@@ -9,8 +9,8 @@ const AdvancedDetailsFooter = styled.div<{ show: boolean }>`
   margin-top: -2rem;
   width: 100%;
   max-width: 400px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   color: ${({ theme }) => theme.colors.textSubtle};
   z-index: 1;
 

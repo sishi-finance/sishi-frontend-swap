@@ -94,7 +94,7 @@ export const Dots = styled.span`
 
 const SwapCallbackErrorInner = styled.div`
   background-color: ${({ theme }) => transparentize(0.9, theme.colors.failure)};
-  border-radius: 1rem;
+  border-radius: 0px;
   display: flex;
   align-items: center;
   font-size: 0.825rem;
@@ -116,7 +116,7 @@ const SwapCallbackErrorInnerAlertTriangle = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 12px;
-  border-radius: 12px;
+  border-radius: 0px;
   min-width: 48px;
   height: 48px;
 `
@@ -136,6 +136,6 @@ export const SwapShowAcceptChanges = styled(AutoColumn)`
   background-color: ${({ theme }) => transparentize(0.9, theme.colors.primary)};
   color: ${({ theme }) => theme.colors.primary};
   padding: 0.5rem;
-  border-radius: 12px;
+  border-radius: 0px;
   margin-top: 8px;
 `

@@ -10,7 +10,7 @@ const Tabs = styled.div`
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  border-radius: 3rem;
+  border-radius: 0px;
   justify-content: space-evenly;
 `
 
